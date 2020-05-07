@@ -10,15 +10,15 @@ import pyexcel
 def get_ip_data():
     while True:
         try:
-            input_ip = int(input("\nWhat is the best Star Wars movie? 1, 2, 3, 4, 5, 6, 7, 8, or 9? "))
+            input_ip = str(input("\nWhat is the IP address? "))
             break
         except ValueError:
             print("Not a valid input you big dummy. Try again!")
     while True:
         try:
-            input_driver = str(input("Who is the driver associated with the Millenium Falcon? "))
+            input_driver = str(input("What is the driver associated with this device? "))
             break
-        except input_driver.lower() != "chewbacca":
+        except ValueError:
             print("Not a valid input you big dummy. Try again!!")
     while True:
         try:   

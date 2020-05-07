@@ -8,30 +8,10 @@ import pyexcel
 
 # Request data from user
 def get_ip_data():
-    while True:
-        try:
-            input_ip = int(input("\nWhat is the best Star Wars movie? 1, 2, 3, 4, 5, 6, 7, 8, or 9? "))
-            break
-        except ValueError:
-            print("Not a valid input you big dummy. Try again!")
-    while True:
-        try:
-            input_driver = str(input("Who is the driver associated with the Millenium Falcon? "))
-            break
-        except input_driver.lower() != "chewbacca":
-            print("Not a valid input you big dummy. Try again!!")
-    while True:
-        try:   
-            input_vehicle = str(input("What is the vehicle associated with this train wreck? "))
-            break
-        except ValueError:
-            print("Not a valid input, Elizabeth, it's the big one. Try again.")
-    while True:
-        try:
-            input_year = int(input("What is the year associated with this vintage? "))
-            break
-        except ValueError:
-            print("Nice thought but not a valid year. Try again!!!")
+    input_ip = input("\nWhat is the IP address? ")
+    input_driver = input("What is the driver associated with this device? ")
+    input_vehicle = input("What is the vehicle associated with this train wreck? ")
+    input_year = input("What is the year associated with this vintage? ")
     d = {"IP": input_ip, "driver": input_driver, "Vehicle": input_vehicle,"Year": input_year,}
     return d
 
