@@ -18,7 +18,8 @@ def get_ip_data():
         try:
             input_driver = str(input("Who is the driver associated with the Millenium Falcon? "))
             break
-        except input_driver.lower() != "chewbacca":
+        except:
+           # input_driver.lower() != "chewbacca":
             print("Not a valid input you big dummy. Try again!!")
     while True:
         try:   
